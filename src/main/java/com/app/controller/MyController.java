@@ -25,7 +25,7 @@ System.out.println("Home Controller Class");
 		return "home";
 	}
 	
-	@GetMapping("/ma")
+	@GetMapping("/m1")
 	public String method1(Locale locale, Model model) {
 		System.out.println("Home Controller Method-1");
 		
