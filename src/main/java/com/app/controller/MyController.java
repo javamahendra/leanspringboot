@@ -13,6 +13,7 @@ public class MyController {
 
 	@GetMapping("/hello")
 	public String home(Locale locale, Model model) {
+		System.out.println("Home Controller Class");
 		Date date = new Date();
 System.out.println("Home Controller Class");
 System.out.println("Home Controller Class");
@@ -22,6 +23,13 @@ System.out.println("Home Controller Class");
 		model.addAttribute("serverTime", formattedDate);
 		System.out.println("Home Controller Class");
 		return "home";
+	}
+	
+	@GetMapping("/ma")
+	public String method1(Locale locale, Model model) {
+		System.out.println("Home Controller Method-1");
+		
+		return "method -1";
 	}
 
 }
