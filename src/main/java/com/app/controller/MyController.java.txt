@@ -14,9 +14,12 @@ public class MyController {
 	@GetMapping("/hello")
 	public String home(Locale locale, Model model) {
 		Date date = new Date();
+System.out.println("Home Controller Class");
+System.out.println("Home Controller Class");
+System.out.println("Home Controller Class");
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
 		String formattedDate = dateFormat.format(date);
-		//model.addAttribute("serverTime", formattedDate);
+		model.addAttribute("serverTime", formattedDate);
 		System.out.println("Home Controller Class");
 		return "home";
 	}
