@@ -32,4 +32,11 @@ System.out.println("Home Controller Class");
 		return "method -1";
 	}
 
+	@GetMapping("/m2")
+	public String method2() {
+		System.out.println("Home Controller Method-2");
+		
+		return "method -2";
+	}
+
 }
